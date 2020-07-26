@@ -36,7 +36,7 @@ public class CategoryController {
     }
     @RequestMapping("/editCategory")
     public List<Category> listCategory(int id,String username,String password) throws Exception {
-        Category c= categoryMapper.get(id);
+        Category c = categoryMapper.get(id);
         c.setUsername(username);
         c.setPassword(password);
         return categoryMapper.findAll();
