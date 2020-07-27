@@ -41,9 +41,7 @@ public class CategoryController {
         c.setPassword(password);
         return categoryMapper.findAll();
     }
-/*
 
- */
     @RequestMapping("/listCategory")
     @ResponseBody
     public List<Category> listCategory(Model m,@RequestParam(value = "start", defaultValue = "0") int start,@RequestParam(value = "size", defaultValue = "5") int size) throws Exception {
